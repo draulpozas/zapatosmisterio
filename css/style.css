@@ -69,10 +69,11 @@ article {
     margin-top: 2em;
     background-color: #00000033;
     padding: 1em;
+    min-height: 300px;
 }
 
 article img {
-    /* display: inline-block; */
+    max-height: 250px;
     float: left;
     margin-right: 5px;
 }
