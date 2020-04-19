@@ -2,6 +2,8 @@
 
 body {
     background-color: #5e4338;
+    /* font-size: 27px; */
+    color: white;
 }
 
 header {
@@ -9,7 +11,11 @@ header {
     font-weight: bold;
     font-size: 5rem;
     text-align: center;
-    color: white;
+    /* color: white; */
+}
+header a{
+    color: inherit;
+    text-decoration: none;
 }
 
 #logo {
@@ -21,4 +27,55 @@ header {
     background-position: bottom;
     background-repeat: no-repeat;
     filter: invert();
+}
+
+nav {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 2rem;
+    background-color: black;
+}
+nav a{
+    display: inline-block;
+    color: inherit;
+    margin: 0 1em;
+    padding: 0 1em;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+nav a:hover {
+    background-color: #ffffff33;
+}
+
+section {
+    margin-top: 2em;
+    background-color: #00000033;
+    padding: 1em;
+}
+section h1:first-of-type {
+    margin-top: 0;
+}
+h1 {
+    margin: .5em 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    font-weight: lighter;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article {
+    margin-top: 2em;
+    background-color: #00000033;
+    padding: 1em;
+}
+
+article img {
+    /* display: inline-block; */
+    float: left;
+    margin-right: 5px;
+}
+article h1:first-of-type {
+    margin-top: 0;
 }
