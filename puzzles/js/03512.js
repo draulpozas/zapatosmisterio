@@ -48,11 +48,11 @@ function addDropEvents() {
         }
     });
 
-    numbersNode.ondrop = function(ev) {
-        ev.preventDefault();
-        console.log(ev.dataTransfer.getData('n'));
-        numbersNode.appendChild(createNumberNode(parseInt(ev.dataTransfer.getData('n'))));
-    }
+    // numbersNode.ondrop = function(ev) {
+    //     ev.preventDefault();
+    //     console.log(ev.dataTransfer.getData('n'));
+    //     numbersNode.appendChild(createNumberNode(parseInt(ev.dataTransfer.getData('n'))));
+    // }
 }
 
 function readCode() {
@@ -61,6 +61,6 @@ function readCode() {
         code += container.dataset.n;
     });
     if (code == '03512') {
-        window.alert('¡Superado!');
+        window.alert('¡Superado!\nHas obtenido un nuevo fragmento: "(65-68)stav"\n¡Apunta estos fragmentos!');
     }
 }
