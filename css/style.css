@@ -48,6 +48,8 @@ nav a:hover {
 }
 
 section {
+    margin: auto;
+    max-width: 750px;
     margin-top: 2em;
     background-color: #00000033;
     padding: 1em;
@@ -66,6 +68,8 @@ p {
 }
 
 article {
+    margin: auto;
+    max-width: 750px;
     margin-top: 2em;
     background-color: #00000033;
     padding: 1em;

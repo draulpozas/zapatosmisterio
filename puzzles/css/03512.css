@@ -5,6 +5,9 @@ body {
     background-color: #5e4338;
     font-family: 'Great Vibes', cursive;
 }
+body>a {
+    color: white;
+}
 
 #numbers {
 /*     background-color: #00000005; */

@@ -62,5 +62,6 @@ function readCode() {
     });
     if (code == '03512') {
         window.alert('¡Superado!\nHas obtenido un nuevo fragmento: "(65-68)stav"\n¡Apunta estos fragmentos!');
+        document.body.innerHTML = '<a href="manolodice.html">Ir a la siguiente prueba.</a>';
     }
 }
