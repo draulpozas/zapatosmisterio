@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    color: white;
+    background-color: #5e4338;
+    font-family: 'Great Vibes', cursive;
+}
+
 #numbers {
 /*     background-color: #00000005; */
     display: flex;
@@ -38,9 +46,6 @@
     width: 18%;
     font-size: 4rem;
 }
-
-
-
 
 
 
