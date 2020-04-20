@@ -53,6 +53,7 @@ section {
     margin-top: 2em;
     background-color: #00000033;
     padding: 1em;
+    text-align: justify;
 }
 section h1:first-of-type {
     margin-top: 0;
@@ -83,4 +84,46 @@ article img {
 }
 article h1:first-of-type {
     margin-top: 0;
+}
+
+
+
+
+
+
+#hidden_element {
+    position: fixed;
+    right: -100%;
+    bottom: 5vh;
+    background-color: black;
+    padding: 1em;
+    border-radius: 50% 0 0 50%;
+    animation-name: anim1;
+    animation-duration: 2s;
+/*     animation-direction: initial;
+    animation-timing-function: initial; */
+    animation-delay: 3s;
+/*     animation-iteration-count: 1; */
+    animation-fill-mode: forwards;
+}
+#hidden_element a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    animation-name: anim2;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim1 {
+    0% {right: -100%;}
+    100% {right: 0;}
+}
+
+@keyframes anim2 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
 }
