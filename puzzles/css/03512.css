@@ -4,6 +4,7 @@ body {
     color: white;
     background-color: #5e4338;
     font-family: 'Great Vibes', cursive;
+    text-align: center;
 }
 body>a {
     color: white;
