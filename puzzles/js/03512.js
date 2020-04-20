@@ -23,12 +23,9 @@ function createNumberNode(n) {
 
     node.classList.add('number');
     node.innerHTML = ''+n;
-    // node.dataset.n = n;
     node.id = 'n'+n;
     node.draggable = true;
     node.ondragstart = function(ev) {
-        // ev.preventDefault();
-        // node.style.display = 'none';
         ev.dataTransfer.setData('n', ''+n);
     }
 
@@ -47,12 +44,6 @@ function addDropEvents() {
             readCode();
         }
     });
-
-    // numbersNode.ondrop = function(ev) {
-    //     ev.preventDefault();
-    //     console.log(ev.dataTransfer.getData('n'));
-    //     numbersNode.appendChild(createNumberNode(parseInt(ev.dataTransfer.getData('n'))));
-    // }
 }
 
 function readCode() {
