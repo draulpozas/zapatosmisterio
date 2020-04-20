@@ -74,11 +74,12 @@ article {
     margin-top: 2em;
     background-color: #00000033;
     padding: 1em;
-    min-height: 300px;
+    min-height: calc(250px + 3.5em);
 }
 
 article img {
     max-height: 250px;
+    max-width: 250px;
     float: left;
     margin-right: 5px;
 }
