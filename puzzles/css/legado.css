@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body {
+    color: white;
+    background-color: #5e4338;
+    font-family: 'Kaushan Script', 'Great Vibes', cursive;
+    text-align: center;
+}
+body>h1>a {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+}
+
+p {
+    font-family: 'Kaushan Script';
+    font-size: 20px;
+    font-weight: lighter;
+    max-width: 50vw;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+input, button {
+    border: 0;
+    background-color: inherit;
+    font-size: 25px;
+    font-family: 'Kaushan Script';
+    text-align: center;
+}
+input {
+    border-bottom: 2px solid black;
+    width: 25%;
+    color: white;
+}
+button {
+    background-color: white;
+}
+button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    p{
+        max-width: 100%;
+    }
+}
