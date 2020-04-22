@@ -87,6 +87,10 @@ article h1:first-of-type {
     margin-top: 0;
 }
 
+article.novedad {
+    background-color: #ffffff40;
+}
+
 
 
 
