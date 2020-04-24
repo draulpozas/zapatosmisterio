@@ -8,13 +8,14 @@ var targetString;
 window.onload = init;
 
 function init() {
-    generateStrings();
-    console.log(clock1string);
-    console.log(clock2string);
-    console.log(clock3string);
-    console.log(clock4string);
-    
+    document.getElementById('input').onkeyup = function(ev) {
+        if (ev.key == 'Enter') {
+            check();
+        }
+    };
 
+    generateStrings();
+    
     window.addEventListener('wheel', function(ev) {
         if (ev.deltaY > 0) {
             forwards();
@@ -116,7 +117,10 @@ function irrelevantFunction() { // I'd name it "getCode" but anyone could type "
 function check() {
     let input = document.getElementById('input').value;
     if (input == irrelevantFunction()) {
+        document.getElementById('incorrect').classList.add('transparent');
         window.alert('¡Superado!\nFragmento obtenido: "(1-31)De los sos ojos tan fuertemient"');
-        document.body.innerHTML = '<h1><a href="final.html">Hemos terminado.</a></h1>';
+        document.body.innerHTML = '<h1><a href="final.html">Todo está preparado.</a></h1>';
+    } else {
+        document.getElementById('incorrect').classList.remove('transparent');
     }
 }

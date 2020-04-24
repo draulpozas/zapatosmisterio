@@ -96,3 +96,13 @@ button:hover {
   bottom: -3em;
   left: calc(50% - 1.5em);
 }
+
+
+#incorrect {
+    display: inline-block;
+    margin-left: .5em;
+    transition-duration: .3s;
+}
+.transparent {
+    opacity: 0;
+}
