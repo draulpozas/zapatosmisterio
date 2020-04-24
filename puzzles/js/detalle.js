@@ -115,8 +115,8 @@ function irrelevantFunction() { // I'd name it "getCode" but anyone could type "
 }
 
 function check() {
-    let input = document.getElementById('input').value;
-    if (input == irrelevantFunction()) {
+    let input = document.getElementById('input').value.trim();
+    if (input === irrelevantFunction()) {
         document.getElementById('incorrect').classList.add('transparent');
         window.alert('¡Superado!\nFragmento obtenido: "(1-31)De los sos ojos tan fuertemient"');
         document.body.innerHTML = '<h1><a href="final.html">Todo está preparado.</a></h1>';
