@@ -56,6 +56,7 @@ function addDropEvents() {
             ev.preventDefault();
             let n = ev.dataTransfer.getData('n');
             let prevParentId = ev.dataTransfer.getData('prevParentId');
+            container.dataset.n = n;
             container.innerHTML = '';
             
             if (container.id != prevParentId) {
