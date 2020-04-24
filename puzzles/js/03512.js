@@ -27,20 +27,42 @@ function createNumberNode(n) {
     node.draggable = true;
     node.ondragstart = function(ev) {
         ev.dataTransfer.setData('n', ''+n);
+        ev.dataTransfer.setData('prevParentId', node.parentElement.id);
     }
 
     return node;
 }
 
 function addDropEvents() {
+    numbersNode.ondragover = function(ev) {
+        ev.preventDefault();
+    }
+    numbersNode.ondrop = function(ev) {
+        ev.preventDefault();
+            let n = ev.dataTransfer.getData('n');
+            let prevParentId = ev.dataTransfer.getData('prevParentId');
+            
+            if (prevParentId != 'numbers') {
+                numbersNode.appendChild(createNumberNode(n));
+                removeNumber(document.getElementById(prevParentId), n);
+            }
+    }
+
     document.querySelectorAll('.container').forEach(container => {
         container.ondragover = function(ev) {
             ev.preventDefault();
         }
         container.ondrop = function(ev) {
+            ev.preventDefault();
+            let n = ev.dataTransfer.getData('n');
+            let prevParentId = ev.dataTransfer.getData('prevParentId');
             container.innerHTML = '';
-            container.appendChild(createNumberNode(parseInt(ev.dataTransfer.getData('n'))));
-            container.dataset.n = ev.dataTransfer.getData('n');
+            
+            if (container.id != prevParentId) {
+                container.appendChild(createNumberNode(n));
+                removeNumber(document.getElementById(prevParentId), n);
+            }
+
             readCode();
         }
     });
@@ -55,4 +77,13 @@ function readCode() {
         window.alert('¡Superado!\nHas obtenido un nuevo fragmento: "(65-68)stav"\n¡Apunta estos fragmentos!');
         document.body.innerHTML = '<h1><a href="manolodice.html">Ir a la siguiente prueba.</a></h1>';
     }
+}
+
+function removeNumber(parentNode, n) {
+    let numberNodes = parentNode.childNodes;
+    numberNodes.forEach(node => {
+        if (node.innerHTML && node.innerHTML.includes(n)) {
+            node.remove();
+        }
+    });
 }
