@@ -46,6 +46,15 @@ button:hover {
     cursor: pointer;
 }
 
+#incorrect {
+    display: inline-block;
+    margin-left: .5em;
+    transition-duration: .3s;
+}
+.transparent {
+    opacity: 0;
+}
+
 @media (max-width: 600px) {
     p{
         max-width: 100%;
