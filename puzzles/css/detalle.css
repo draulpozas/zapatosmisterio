@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+  color: white;
+  background-color: #5e4338;
+  font-family: monospace;
+  text-align: center;
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  color: white;
+}
+h1>a {
+  color: inherit;
+}
+
+p {
+    font-family: 'Kaushan Script';
+    font-size: 20px;
+    font-weight: lighter;
+    max-width: 50vw;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+input, button {
+    border: 0;
+    background-color: inherit;
+    font-size: 25px;
+    font-family: 'Kaushan Script';
+    text-align: center;
+}
+input {
+    border-bottom: 2px solid black;
+    width: 7em;
+    color: white;
+}
+button {
+    background-color: white;
+}
+button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#relojes{
+  margin: 10vh auto;
+/*   padding: 2em auto; */
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.reloj {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  /*! margin-bottom: 3em; */
+  border: 5px solid cornflowerblue;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.horas {
+  width: 2px;
+  height: 25px;
+  background-color: black;
+  position: relative;
+  left: calc(50% - 2px);
+  top: calc(50% - 25px);
+  transform-origin: bottom;
+}
+
+.mins {
+  width: 2px;
+  height: 45px;
+  background-color: black;
+  position: relative;
+  left: calc(50% - 2px);
+  top: -20px;
+  transform-origin: bottom;
+}
+
+.screen {
+  width: 3em;
+  height: 1.2em;
+  border: 1px solid black;
+  position: relative;
+  bottom: -3em;
+  left: calc(50% - 1.5em);
+}

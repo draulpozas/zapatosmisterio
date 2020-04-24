@@ -27,7 +27,7 @@ function check() {
     let colors = getColors();
     if (colors == sol) {
         window.alert('¡Superado!\nFragmento obtenido: "(32-57)re llorando tornava la cab"');
-        document.body.innerHTML = `<h1><a href=".html">Ya estás cerca...</a></h1>`;
+        document.body.innerHTML = `<h1><a href="detalle.html">Ya estás cerca...</a></h1>`;
     }
 }
 
