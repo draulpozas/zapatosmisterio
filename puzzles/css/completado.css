@@ -7,7 +7,28 @@ header {
 }
 
 p {
-  max-width: 50vw;
+  max-width: 60vw;
   margin: 1em auto;
   font-size: 20px;
+}
+
+iframe {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  max-height: 250px;
+}
+
+@media (max-width: 600px) {
+  p {
+    max-width: 100%;
+  }
 }
