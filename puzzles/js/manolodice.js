@@ -48,3 +48,15 @@ function clicksAreCorrect() {
 
     return correct;
 }
+
+function pista1() {
+    window.alert('Hay que pulsar los botones en un orden concreto para pasar.\nEl botón RESET te permitirá volver a empezar.');
+}
+
+function pista2() {
+    window.alert('Manolo Mocasín siempre decía que hay un zapato para cada situación en la vida.\n¿Quizás haya un zapato para esta situación?');
+}
+
+function pista3() {
+    window.alert('Quizás haya algún zapato en la página web cuya descripción incluya una cantidad inusual de colores\n¿Qué zapatos podrían ser?');
+}

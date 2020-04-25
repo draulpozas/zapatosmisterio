@@ -19,3 +19,15 @@ window.onload = function() {
         }
     };
 }
+
+function pista1() {
+    window.alert('La respuesta está escondida en el texto.');
+}
+
+function pista2() {
+    window.alert('A estas alturas, ya deberías saber que cada puzzle se corresponde con un zapato.\nEl zapato que se corresponde con este puzzle dice: "El último paso es el que debe darse con mayor cuidado".\n¿Qué puede significar?');
+}
+
+function pista3() {
+    window.alert('Un tópico es esconder pistas en la primera letra de cada oración de un texto.\nPero eso sería muy poco original, ¿no?');
+}

@@ -1,0 +1,23 @@
+#pistas {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+}
+
+.pista {
+    font-size: 1.2em;
+    background-color: black;
+    margin: .5em 0;
+    padding: .5em;
+    position: relative;
+    left: -5px;
+    border-radius: 0 1em 1em 0;
+    transition-duration: .1s;
+}
+.pista:hover {
+    cursor: pointer;
+    left: 0;
+}
+

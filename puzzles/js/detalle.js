@@ -124,3 +124,11 @@ function check() {
         document.getElementById('incorrect').classList.remove('transparent');
     }
 }
+
+function pista1() {
+    window.alert('Para resolver el puzle hay que saber un detalle que, aunque pequeño, es bastante importante si quieres llevar la zapatería.');
+}
+
+function pista2() {
+    window.alert('¿Hay en la página de la zapatería alguna referencia a relojes, momentos del día, horas, etc.?');
+}

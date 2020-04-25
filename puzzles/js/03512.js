@@ -88,3 +88,11 @@ function removeNumber(parentNode, n) {
         }
     });
 }
+
+function pista1() {
+    window.alert('¡Mirad para arriba, que caen judías!');
+}
+
+function pista2() {
+    window.alert('En la url.');
+}

@@ -40,3 +40,15 @@ function getColors() {
 
     return colors;
 }
+
+function pista1() {
+    window.alert('Los botones tienen que crear una secuencia de colores determinada. Busca dónde puedes encontrar una secuencia de colores.');
+}
+
+function pista2() {
+    window.alert('Hasta ahora los zapatos eran las pistas, pero hay que tener en cuenta las tendencias.\n¡Quizás no valgan todos los zapatos!');
+}
+
+function pista3() {
+    window.alert('Dos de los zapatos marcados como "novedad" sirven, pero uno hay que ignorarlo.\nSería buena idea ignorar aquél que no guste mucho al público.');
+}

@@ -19,3 +19,11 @@ window.onload = function() {
         }
     };
 }
+
+function pista1() {
+    window.alert('Quizás sea el momento de usar todos esos fragmentos que has ido obteniendo con cada puzzle.');
+}
+
+function pista2() {
+    window.alert('Siéntete libre de buscar en internet para averiguar quién es ese héroe del que habla Manolo, y cuál es su lugar de descanso.');
+}
