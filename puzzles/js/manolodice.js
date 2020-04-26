@@ -71,7 +71,7 @@ function clicksAreCorrect() {
 }
 
 function pista1() {
-    window.alert('Hay que pulsar los botones en un orden concreto para pasar.\nEl botón RESET te permitirá volver a empezar.');
+    window.alert('Hay que pulsar los botones siguiendo una secuencia determinada de colores.\nEl botón RESET te permitirá empezar de cero la secuencia si quieres volver a intentarlo.');
 }
 
 function pista2() {
