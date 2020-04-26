@@ -11,24 +11,21 @@ body>h1>a {
 }
 
 #numbers {
-/*     background-color: #00000005; */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     position: absolute;
-    left: 50%;
-    min-width: 60%;
-    transform: translateX(-50%);
+    margin: auto;
+    width: 100%;
 }
 
 .number {
     display: inline-block;
     font-size: 4rem;
     margin: 0 .1em;
-/*     background-color: #00000005; */
 }
 .number:hover {
-    cursor: -moz-grab;
+    cursor: grab;
 }
 
 #containers {
