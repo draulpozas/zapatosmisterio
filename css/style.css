@@ -98,18 +98,11 @@ article.novedad {
 
 #hidden_element {
     position: fixed;
-    right: -100%;
+    right: 0;
     bottom: 5vh;
     background-color: black;
     padding: 1em;
     border-radius: 50% 0 0 50%;
-    animation-name: anim1;
-    animation-duration: 2s;
-/*     animation-direction: initial;
-    animation-timing-function: initial; */
-    animation-delay: 3s;
-/*     animation-iteration-count: 1; */
-    animation-fill-mode: forwards;
 }
 #hidden_element a {
     display: inline-block;
@@ -117,15 +110,14 @@ article.novedad {
     color: inherit;
     animation-name: anim2;
     animation-duration: 10s;
-    animation-delay: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-@keyframes anim1 {
+/* @keyframes anim1 {
     0% {right: -100%;}
     100% {right: 0;}
-}
+} */
 
 @keyframes anim2 {
     0% {transform: rotate(0deg);}
