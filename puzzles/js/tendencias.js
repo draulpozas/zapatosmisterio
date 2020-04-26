@@ -1,4 +1,4 @@
-const sol = 'blueredredyellowbluered';
+const sol = 'yellowblueredblueredred';
 
 function switchClass(n) {
     let btn = document.querySelectorAll("button")[n];
