@@ -75,8 +75,10 @@ function readCode() {
         code += container.dataset.n;
     });
     if (code == '03512') {
-        window.alert('¡Superado!\nHas obtenido un nuevo fragmento: "(65-68)stav"\n¡Apunta estos fragmentos!');
-        document.body.innerHTML = '<h1><a href="manolodice.html">Ir a la siguiente prueba.</a></h1>';
+        setTimeout(function() { // Timeout added: in chrome, the alert showed up before the last number could be added to its container. Didn't affect the game but looked weird.
+            window.alert('¡Superado!\nHas obtenido un nuevo fragmento: "(65-68)stav"\n¡Apunta estos fragmentos!');
+            document.body.innerHTML = '<h1><a href="manolodice.html">Ir a la siguiente prueba.</a></h1>';
+        }, 50);
     }
 }
 
