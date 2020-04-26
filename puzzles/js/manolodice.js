@@ -1,27 +1,48 @@
 var clicks = [];
 var code = ['blue', 'blue', 'yellow', 'red', 'green', 'yellow', 'blue'];
+var audRed = new Audio('audio/red.mp3');
+var audBlue = new Audio('audio/blue.mp3');
+var audGreen = new Audio('audio/green.mp3');
+var audYellow = new Audio('audio/yellow.mp3');
+var audReset = new Audio('audio/reset.mp3');
+var audCurrent = new Audio();
 
 function redClick() {
+    audCurrent.pause();
+    audCurrent = audRed;
+    audCurrent.play();
     clicks.push('red');
     checkCode();
 }
 
 function blueClick() {
+    audCurrent.pause();
+    audCurrent = audBlue;
+    audCurrent.play();
     clicks.push('blue');
     checkCode();
 }
 
 function greenClick() {
+    audCurrent.pause();
+    audCurrent = audGreen;
+    audCurrent.play();
     clicks.push('green');
     checkCode();
 }
 
 function yellowClick() {
+    audCurrent.pause();
+    audCurrent = audYellow;
+    audCurrent.play();
     clicks.push('yellow');
     checkCode();
 }
 
 function reset() {
+    audCurrent.pause();
+    audCurrent = audReset;
+    audCurrent.play();
     clicks = [];
 }
 
