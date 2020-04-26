@@ -39,13 +39,13 @@ function addDropEvents() {
     }
     numbersNode.ondrop = function(ev) {
         ev.preventDefault();
-            let n = ev.dataTransfer.getData('n');
-            let prevParentId = ev.dataTransfer.getData('prevParentId');
-            
-            if (prevParentId != 'numbers') {
-                numbersNode.appendChild(createNumberNode(n));
-                removeNumber(document.getElementById(prevParentId), n);
-            }
+        let n = ev.dataTransfer.getData('n');
+        let prevParentId = ev.dataTransfer.getData('prevParentId');
+        
+        if (prevParentId != 'numbers') {
+            numbersNode.appendChild(createNumberNode(n));
+            removeNumber(document.getElementById(prevParentId), n);
+        }
     }
 
     document.querySelectorAll('.container').forEach(container => {
