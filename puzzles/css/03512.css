@@ -5,6 +5,7 @@ body {
     background-color: #5e4338;
     font-family: 'Great Vibes', cursive;
     text-align: center;
+    margin: 0;
 }
 body>h1>a {
     color: white;
@@ -15,7 +16,6 @@ body>h1>a {
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    margin: auto;
     width: 100%;
 }
 
