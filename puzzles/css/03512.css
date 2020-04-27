@@ -33,11 +33,9 @@ body>h1>a {
     flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    top: 40%;
     height: 10em;
-    width: 60%;
 }
 .container {
     text-align: center;
